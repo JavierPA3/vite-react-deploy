@@ -1,22 +1,26 @@
 import { useState } from 'react';
-import './Icons.css';
 import { Window } from '../window/Window';
+import './Icons.css';
 
 export const Icons = ({ image, name, alt }) => {
-  const [isOpen, setIsOpen] = useState(false); // Estado para controlar si la ventana está abierta
+  const [isWindowOpen, setIsWindowOpen] = useState(false); 
 
-  const openApp = () => {
-    setIsOpen(true); // Cambia el estado a "abierto"
+  const openWindow = () => {
+    setIsWindowOpen(true);
+  };
+
+  const closeWindow = () => {
+    setIsWindowOpen(false); 
   };
 
   return (
-    <>  
-      <button className="iconButton" onClick={openApp}>
+    <>
+      <button className="iconButton" onClick={openWindow}>
         <img src={image} alt={name} className="iconsPicture" />
         <p className="iconsP">{name}</p>
       </button>
 
-      {isOpen && <Window app={alt} />}
+      {isWindowOpen && <Window app={alt} onClose={closeWindow} />}
     </>
   );
 };

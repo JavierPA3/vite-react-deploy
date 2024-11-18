@@ -1,32 +1,64 @@
-.topWindow {
-    background: #2257D6;
-    width: 80%;
-    height: 1.5rem;
-    margin-top: 2.5rem;
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px; 
-}
-
 
 .divIconsWindows {
     display: flex;
-    flex-direction: row-reverse
+    flex-direction: row-reverse;
 }
 
 .windowsIcons {
     border-radius: 3px;
-    width: 1rem;
-    height: 1rem;
-    margin: 0.25rem;
-    
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 5px;
 }
 
-.windowContent {
-    width: 80%;
-    height: 100%;
-    border: 2px solid #2257D6; 
-    border-bottom-left-radius: 10px; 
-    border-bottom-right-radius: 10px;
-    margin-bottom: 2.5rem;
-    box-sizing: border-box; 
+
+
+.topWindow {
+  height: 30px;
+  background: #0078d7;
+  color: white;
+  cursor: grab;
+}
+.resizeHandle {
+  width: 15px;
+  height: 15px;
+  background: #2257D6;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+
+.resizeHandle {
+  width: 15px;
+  height: 15px;
+  background: #2257D6;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+
+.windowWrapper {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 5rem); /* Ajustamos la altura para que deje margen al fondo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+  /* Contenedor que permite desplazamiento del contenido */
+  .windowContent {
+    height: calc(100% - 30px);
+    box-sizing: border-box;
+    border: #2257D6 2px solid;
+    padding-bottom: 5rem; /* Añadido espacio al final */
+  }
+  .iconButtonWindow {
+    background: none;
+    border: none;
+    cursor: pointer;
 }

@@ -5,6 +5,8 @@
     width: 100%;
     background: #2257D6 url(../img/3.png) repeat-x 0 0;
     height: 31px;
+    z-index: 15; 
+
 }
 
 .logo {

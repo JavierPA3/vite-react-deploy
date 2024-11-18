@@ -4,9 +4,8 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    margin: 0;
     margin-bottom: 1rem;
-    width: 6%;
+    width: 22%;
 }
 
 .iconButton:focus {
@@ -16,14 +15,13 @@
 .iconsPicture {
     width: 2.25rem;
     height: 2.25rem;
-    margin-left: 2rem;
     object-fit: cover;
+    margin-left: 0.5rem;
 }
 
 .iconsP {
-    font-size: 0.89rem;
+    font-size: 0.7rem;
     color: white;
-    margin-left: 1rem;
-    margin-top: 0.5rem; 
+    margin-top: 0.1rem; 
 }
 
