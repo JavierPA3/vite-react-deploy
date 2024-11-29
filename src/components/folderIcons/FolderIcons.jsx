@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Window } from '../window/Window';
-import './Icons.css';
+import './foldricons.css';
 
-export const Icons = ({ image, name, alt }) => {
+export const FolderIcons = ({ image, name, alt }) => {
   const [isWindowOpen, setIsWindowOpen] = useState(false); 
 
   const openWindow = () => {
@@ -15,9 +15,9 @@ export const Icons = ({ image, name, alt }) => {
 
   return (
     <>
-      <button className="iconButton" onClick={openWindow}>
-        <img src={image} alt={name} className="iconsPicture" />
-        <p className="iconsP">{name}</p>
+      <button className="FoldiconButton" onClick={openWindow}>
+        <img src={image} alt={name} className="FoldiconsPicture" />
+        <p className="FoldiconsP">{name}</p>
       </button>
 
       {isWindowOpen && <Window app={alt} onClose={closeWindow} imageWindow = {image} nameWindow = {name} />}

@@ -1,15 +1,41 @@
 import React, { useState } from 'react';
 import './window.css';
 import { AboutMe } from '../../apps/certificados/AboutMe';
-
+import { MoreAboutMe } from '../../apps/certificados/MoreAboutMe';
+import { Symblog } from '../../apps/certificados/Symblog';
+import { CrudOne } from '../../apps/certificados/CrudOne';
+import { PitchEventing } from '../../apps/certificados/PitchEventing';
+import { Porfolio } from '../../apps/certificados/Porfolio';
+import { PythonApi } from '../../apps/certificados/PythonApi';
+import { Tfg } from '../../apps/certificados/Tfg';
+import { Clock } from '../../apps/clockApp/Clock';
+import { WeatherApp } from '../../apps/weather/WeatherApp';
+import { TerminalApp } from '../../apps/terminal/terminalApp';
+import { Calculator } from '../../apps/calculadora/Calculator';
+import { NoteBlock } from '../../apps/blocNotas/NoteBlock';
+import { GamesFolder } from '../../apps/GamesFolder/GamesFolder';
 const componentMap = {
   AboutMe,
+  MoreAboutMe,
+  Symblog,
+  CrudOne,
+  PitchEventing,
+  Porfolio,
+  PythonApi,
+  Tfg,
+  Clock,
+  WeatherApp,
+  TerminalApp,
+  Calculator,
+  NoteBlock,
+  GamesFolder,
+
 };
 
-export const Window = ({ app, onClose }) => {
+export const Window = ({ app, onClose, imageWindow, nameWindow }) => {
   const SelectedComponent = componentMap[app];
 
-  const [position, setPosition] = useState({ top: 50, left: 350 });
+  const [position, setPosition] = useState({ top: 5, left: 350 });
   const [size, setSize] = useState({ width: 950, height: 600 }); 
   const [dragging, setDragging] = useState(false);
   const [resizing, setResizing] = useState(false);
@@ -70,7 +96,12 @@ export const Window = ({ app, onClose }) => {
       onMouseLeave={handleMouseUp} 
     >
       <div className="topWindow" onMouseDown={handleMouseDown}>
+       <div className='topWindowIcon'>
+       <img src={imageWindow} alt={nameWindow} className="newTopWindowIcon" />
+       <p className="newTopWindowP">{nameWindow}</p>
+       </div>
         <div className="divIconsWindows">
+        
           <button className="iconButtonWindow" onClick={onClose}>
             <img src="img/Exit.png" alt="close" className="windowsIcons" />
           </button>
@@ -80,12 +111,12 @@ export const Window = ({ app, onClose }) => {
           <button className="iconButtonWindow">
             <img src="img/Minimize.png" alt="minimize" className="windowsIcons" />
           </button>
+          
         </div>
       </div>
 
-      {/* Contenedor desplazable de la ventana */}
       <div className="windowContent">
-        {SelectedComponent ? <SelectedComponent /> : <p>Componente no encontrado</p>}
+        {SelectedComponent ? <SelectedComponent closeWindow={onClose} windowImage={imageWindow} /> : <p>Componente no encontrado</p>}
       </div>
 
       <div

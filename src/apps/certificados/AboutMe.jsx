@@ -1,109 +1,175 @@
-import './aboutme.css'
-export const AboutMe = () => {
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import './aboutme.css';
+import { Window } from '../../components/window/Window';
+
+export const AboutMe = ({ closeWindow, windowImage }) => {
+  const [isWindowOpen, setIsWindowOpen] = useState(false); 
+  const [isSymblogWindowOpen, setIsSymblogWindowOpen] = useState(false); 
+  const [isCrudOneOpen, setIsCrudOneOpen] = useState(false);
+  const [isPitchEventingOpen, setIsPitchEventingOpen] = useState(false);
+  const [isTfgOpen, setIsTfgOpen] = useState(false);
+  const [isPythonApiOpen, setIsPythonApiOpen] = useState(false);
+  const [isPorfolioOpen, setIsPorfolioOpen] = useState(false);
+
+  const openNewWindow = () => {
+    setIsWindowOpen(true); 
+  };
+
+  const closeWindowHandler = () => {
+    setIsWindowOpen(false); 
+  };
+
+  const openSymblogWindow = () => {
+    setIsSymblogWindowOpen(true); 
+  };
+
+  const closeSymblogWindow = () => {
+    setIsSymblogWindowOpen(false); 
+  };
+
+  const openCrudOne = () => {
+    setIsCrudOneOpen(true); 
+  }
+  const closeCrudOne = () => {
+    setIsCrudOneOpen(false); 
+  }
+  const openPitchEventing = () => {
+    setIsPitchEventingOpen(true); 
+  }
+  const closePitchEventing = () => {
+    setIsPitchEventingOpen(false); 
+  }
+  const openTfg = () => {
+    setIsTfgOpen(true); 
+  }
+  const closeTfg = () => {
+    setIsTfgOpen(false); 
+  }
+  const openPythonApi = () => {
+    setIsPythonApiOpen(true); 
+  }
+  const closePythonApi = () => {
+    setIsPythonApiOpen(false); 
+  }
+  const openPorfolio = () => {
+    setIsPorfolioOpen(true); 
+  }
+  const closePorfolio = () => {
+    setIsPorfolioOpen(false); 
+  }
+
 
   return (
     <>
       <main className="mainPage">
         <section>
-        <article className='titleArticle'>
-        <img src="img/yo.jpg" alt="Javier Postigo Arévalo" className='mySelfPicture'/>
-        <div>
-        <h1>Javier Postigo Arévalo</h1>
-        <marquee><p>Técnico Superior en Desarrollo de Aplicaciones Web.</p></marquee>
-        </div>
-        </article>
-        <hr/>
-        <article className='aboutMeArticle'>
-          <h2>Sobre mí</h2>
-          <p>Soy un desarrollador de aplicaciones web <i><strong>resolutivo</strong></i> y <i><strong>ambicioso</strong></i>. Interesado en adentrarme al mundo laboral del desarrollo web. Busco encajar en un equipo talentoso que me pueda ayudar a crecer profesionalmente.</p>
-          <p>Si esta interesado en conocer mis aspectos más personales, pulse <a href="#">aquí.</a></p>
-        </article>
-        <hr/>
-        <article className='skillsArticle'>
-          <ul>
-            <h2>Habilidades técnicas</h2>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Docker</li>
-            <li>Git</li>
-            <li>TypeScript</li>
-            <li>SQL</li>
-            <li>Php</li>
-            <li>Java</li>
-          </ul>
-          <ul>
-            <h2>Habilidades personales</h2>
-            <li>Creativo</li>
-            <li>Trabajo en equipo</li>
-            <li>Proactivo</li>
-            <li>Resolutivo</li>
-            <li>Detallista</li>
-            <li>Pensamiento analítico</li>
-            <li>Organizado</li>
-            <li>Autodidacta</li>
-            <li>Comunicativo</li>
-            <li>Empático</li>
-          </ul>
-        </article>
-        <hr/>
-        <article className='conocimientosAdquiridos'>
-          <ul>
-            <h2>Conocimientos adquiridos.</h2>
-            <li>Manejo de base de datos.</li>
-            <li>Desarrollo de aplicaciones web front/back.</li>
-            <li>Diseño y desarrollo de páginas web.</li>
-            <li>Desarrollo de aplicaciones móviles.</li>
-            <li>Desarrollo de APIs.</li>
-            <li>Depuración de código.</li>
-            <li>Control de versiones.</li>
-            <li>Desarrollo de páginas web en WordPress.</li>
-            <li>Desarrollo de plugins de WordPress.</li>
-            <li>Desarrollo de aplicaciones web en el área del análisis deportivo aplicado al fútbol.</li> 
-          </ul>
-        </article>
-        <hr/>
+          <article className="titleArticle">
+            <img src="img/yo.jpg" alt="Javier Postigo Arévalo" className="mySelfPicture" />
+            <div>
+              <h1>Javier Postigo Arévalo</h1>
+              <marquee>
+                <p>Técnico Superior en Desarrollo de Aplicaciones Web.</p>
+              </marquee>
+            </div>
+          </article>
+          <hr />
+          <article className="aboutMeArticle">
+            <h2>Sobre mí</h2>
+            <p>
+              Soy un desarrollador de aplicaciones web <i><strong>resolutivo</strong></i> y <i><strong>ambicioso</strong></i>. Interesado en adentrarme al mundo laboral del desarrollo web. Busco encajar en un equipo talentoso que me pueda ayudar a crecer profesionalmente.
+            </p>
+            <p>
+              Si está interesado en conocer mis aspectos más personales, pulse
+              <button onClick={openNewWindow} className="invisibleButton">aquí.</button>
+            </p>
+          </article>
+          <hr />
+          <article className="skillsArticle">
+            <ul>
+              <h2>Habilidades técnicas</h2>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Docker</li>
+              <li>Git</li>
+              <li>TypeScript</li>
+              <li>SQL</li>
+              <li>Php</li>
+              <li>Java</li>
+            </ul>
+            <ul>
+              <h2>Habilidades personales</h2>
+              <li>Creativo</li>
+              <li>Trabajo en equipo</li>
+              <li>Proactivo</li>
+              <li>Resolutivo</li>
+              <li>Detallista</li>
+              <li>Pensamiento analítico</li>
+              <li>Organizado</li>
+              <li>Autodidacta</li>
+              <li>Comunicativo</li>
+              <li>Empático</li>
+            </ul>
+          </article>
+          <hr />
+          <article className="conocimientosAdquiridos">
+            <ul>
+              <h2>Conocimientos adquiridos</h2>
+              <li>Manejo de base de datos</li>
+              <li>Desarrollo de aplicaciones web front/back</li>
+              <li>Diseño y desarrollo de páginas web</li>
+              <li>Desarrollo de aplicaciones móviles</li>
+              <li>Desarrollo de APIs</li>
+              <li>Depuración de código</li>
+              <li>Control de versiones</li>
+              <li>Desarrollo de páginas web en WordPress</li>
+              <li>Desarrollo de plugins de WordPress</li>
+              <li>Desarrollo de aplicaciones web en el área del análisis deportivo aplicado al fútbol</li>
+            </ul>
+          </article>
+          <hr />
           <h2>Formación</h2>
-        <article className='formation'>
-          <div className='titulo'>
-            <h4>Título Bachillerato</h4>
-            <p>I.E.S El Tablero</p>
-            <span>2020-2022</span>
-          </div>
-          <div className='titulo'>
-            <h4>Desarrollo de aplicaciones web</h4>
-            <p>I.E.S Gran Capitán</p>
-            <span>2022-2024</span>
-          </div>
-        </article>
-        <hr/>
-        <article className='experienciaLaboral'>
-          <h2>Experiencia laboral</h2>
-          <div className='experienciaContainer'>
+          <article className="formation">
+            <div className="titulo">
+              <h4>Título Bachillerato</h4>
+              <p>I.E.S El Tablero</p>
+              <span>2020-2022</span>
+            </div>
+            <div className="titulo">
+              <h4>Desarrollo de aplicaciones web</h4>
+              <p>I.E.S Gran Capitán</p>
+              <span>2022-2024</span>
+            </div>
+          </article>
+          <hr />
+          <article className="experienciaLaboral">
+            <h2>Experiencia laboral</h2>
+            <div className="experienciaContainer">
               <div>
-              <img src='img/ccf.png' alt='Córdoba CF' className='logoExperiencia'/>
+                <img src="img/ccf.png" alt="Córdoba CF" className="logoExperiencia" />
               </div>
               <div>
-              <h4>Córdoba Club de Fútbol</h4>
-              <p>Contrato en prácticas</p>
-              <span>Marzo - Junio - 2024</span>
+                <h4>Córdoba Club de Fútbol</h4>
+                <p>Contrato en prácticas</p>
+                <span>Marzo - Junio - 2024</span>
               </div>
               <div>
                 <h4>Funciones</h4>
                 <ul>
-                  <li>Desarrollo de aplicaciones web en el área del análisis deportivo aplicado al fútbol.</li>
-                  <li>Análisis y filtrado de datos sobre partidos.</li>
-                  <li>Manipulacion de bases de datos.</li>
-                  <li>Desarrollo de scripts python.</li>
-                  <li>Desarrollo de scripts con JavaScript.</li>
+                  <li>Desarrollo de aplicaciones web en el área del análisis deportivo aplicado al fútbol</li>
+                  <li>Análisis y filtrado de datos sobre partidos</li>
+                  <li>Manipulación de bases de datos</li>
+                  <li>Desarrollo de scripts Python</li>
+                  <li>Desarrollo de scripts con JavaScript</li>
                 </ul>
               </div>
-          </div>
-        </article>
-        <hr/>
-        <article>
+            </div>
+          </article>
+          <hr />
+          <article>
           <h2>Formación y certificados</h2>
           <div className='certificadosScroll'>
             <div className='certificado'>
@@ -137,38 +203,43 @@ export const AboutMe = () => {
           </div>
         </article>
         <hr/>
-        <article className='proyectos'>
-          <h2>Proyectos</h2>
-          <div className='proyectosContainer'>
-            <div>
-              <h4>Crud 1</h4>
-              <p>Crud sencillo con Angular y una API con php.</p>
+                  <article className='proyectos'>
+            <h2>Proyectos</h2>
+            <div className='proyectosContainer'>
+              <div>
+                <h4>Crud 1</h4>
+                <p>Crud sencillo con Angular y una API con php.</p>
+                <button onClick={openCrudOne} className="invisibleButton">Más detalles</button>
+              </div>
+              <div>
+                <h4>Symblog</h4>
+                <p>Página web sobre blogs.</p>
+                <button onClick={openSymblogWindow} className="invisibleButton">Más detalles</button>
+              </div>
+              <div>
+                <h4>PitchEventing</h4>
+                <p>Análisis de pases CCF.</p>
+                <button onClick={openPitchEventing} className="invisibleButton">Más detalles</button>
+              </div>
+              <div>
+                <h4>TFG</h4>
+                <p>Predicciones sobre jugadores.</p>
+                <button onClick={openTfg} className="invisibleButton">Más detalles</button>
+              </div>
+              <div>
+                <h4>Python Api</h4>
+                <p>Aplicación de busquedas de peliculas.</p>
+                <button onClick={openPythonApi} className="invisibleButton">Más detalles</button>
+              </div>
+              <div>
+                <h4>Porfolio</h4>
+                <p>Mi porfolio profesional</p>
+                <button onClick={openPorfolio} className="invisibleButton">Más detalles</button>
+              </div>
             </div>
-            <div>
-              <h4>Symblog</h4>
-              <p>Página web sobre blogs.</p>
-            </div>
-            <div>
-              <h4>PitchEventing</h4>
-              <p>Análisis de pases CCF.</p>
-            </div>
-            <div>
-              <h4>TFG</h4>
-              <p>Predicciones sobre jugadores.</p>
-            </div>
-            <div>
-              <h4>Python Api</h4>
-              <p>API hecha con flask utilizada en el TFG.</p>
-            </div>
-            <div>
-              <h4>Porfolio</h4>
-              <p>Mi porfolio profesional</p>
-            </div>
-          </div>
-        </article>
-        
-        <hr/>
-        <article className='contacto'>
+          </article>
+          <hr />
+          <article className='contacto'>
           <h2>Contacto</h2>
           <div className='contactoContainer'>
             <div className='contacto2'>
@@ -180,12 +251,86 @@ export const AboutMe = () => {
             </div>
           </div>
         </article>
-        <hr/>
-        <article className='descargarCv'>
-          <a href='CV/Javier PostigoCv.pdf' download='Javier PostigoCv.pdf'>Descargar Cv</a>
-        </article>
+          <hr />
+          <article className="descargarCv">
+            <a href="CV/Javier PostigoCv.pdf" download="Javier PostigoCv.pdf">Descargar Cv</a>
+          </article>
         </section>
-      </main> 
+      </main>
+
+      {isWindowOpen &&
+        ReactDOM.createPortal(
+          <Window
+            app="MoreAboutMe"
+            onClose={closeWindowHandler}
+            imageWindow={windowImage}
+            nameWindow="Más sobre mí"
+          />,
+          document.body
+        )}
+
+      {isSymblogWindowOpen &&
+        ReactDOM.createPortal(
+          <Window
+            app="Symblog"
+            onClose={closeSymblogWindow}
+            imageWindow={windowImage}
+            nameWindow="Symblog"
+          />,
+          document.body
+        )}
+
+      {isCrudOneOpen &&
+        ReactDOM.createPortal(
+          <Window
+            app="CrudOne"
+            onClose={closeCrudOne}
+            imageWindow={windowImage}
+            nameWindow="Crud 1"
+          />,
+          document.body
+        )}
+      
+      {isPitchEventingOpen &&
+        ReactDOM.createPortal(
+          <Window
+            app="PitchEventing"
+            onClose={closePitchEventing}
+            imageWindow={windowImage}
+            nameWindow="PitchEventing"
+          />,
+          document.body
+        )}
+        {isTfgOpen &&
+        ReactDOM.createPortal(
+          <Window
+            app="Tfg"
+            onClose={closeTfg}
+            imageWindow={windowImage}
+            nameWindow="TFG"
+          />,
+          document.body
+        )}
+        {isPythonApiOpen &&
+        ReactDOM.createPortal(
+          <Window
+            app="PythonApi"
+            onClose={closePythonApi}
+            imageWindow={windowImage}
+            nameWindow="PythonApi"
+          />,
+          document.body
+        )}
+        {isPorfolioOpen &&
+        ReactDOM.createPortal(
+          <Window
+            app="Porfolio"
+            onClose={closePorfolio}
+            imageWindow={windowImage}
+            nameWindow="Porfolio"
+          />,
+          document.body
+        )}
     </>
-  )
-}
+  );
+};

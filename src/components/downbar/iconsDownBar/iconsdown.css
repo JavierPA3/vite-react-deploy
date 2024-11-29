@@ -1,0 +1,27 @@
+.iconButtonDown {
+    display: grid;
+    grid-template-columns: 20% 20%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.iconButtonDown:focus {
+    outline: none; 
+}
+
+.iconsPictureDown {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.iconsPDown {
+    margin-left: 1rem;
+    margin-top: 0.1rem; 
+    color: #333;
+    font-size: 1.25rem;
+    font-family: Trebuchet;
+}
+
