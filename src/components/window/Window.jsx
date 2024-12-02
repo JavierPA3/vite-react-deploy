@@ -17,7 +17,7 @@ import { GamesFolder } from '../../apps/GamesFolder/GamesFolder.jsx';
 import { ContactsManagerXP } from '../../apps/contactManager/ContactManagerXp.jsx';
 // import { ToDoXP } from '../../apps/ToDo/ToDoXp.jsx';
 import { PowerPointApp } from '../../apps/PowerPoint/PowerPointApp.jsx';
-// import { VideoPlayer } from 'src/apps/videosXp/VideoPlayer.jsx';
+import { VideoPlayer } from '../../apps/videosXp/VideoPlayer.jsx';
 // import { TerminalApp } from 'src/apps/terminal/terminalApp.jsx';
 const componentMap = {
   AboutMe,
@@ -38,7 +38,7 @@ const componentMap = {
   ContactsManagerXP,
   // ToDoXP,
   PowerPointApp,
-  // VideoPlayer,
+  VideoPlayer,
 };
 
 export const Window = ({ app, onClose, imageWindow, nameWindow }) => {
