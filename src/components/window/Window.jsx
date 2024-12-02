@@ -10,7 +10,7 @@ import { PythonApi } from '../../apps/certificados/PythonApi';
 import { Tfg } from '../../apps/certificados/Tfg';
 import { Clock } from '../../apps/clockApp/Clock';
 import { WeatherApp } from '../../apps/weather/WeatherApp';
-import { TerminalApp } from '../../apps/terminal/terminalApp';
+import TerminalApp from '/src/apps/terminal/terminalApp';
 import { Calculator } from '../../apps/calculadora/Calculator';
 import { NoteBlock } from '../../apps/blocNotas/NoteBlock';
 import { GamesFolder } from '../../apps/GamesFolder/GamesFolder';
