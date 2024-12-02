@@ -10,7 +10,7 @@ import { PythonApi } from '../../apps/certificados/PythonApi.jsx';
 import { Tfg } from '../../apps/certificados/Tfg.jsx';
 // import { Clock } from '../../apps/clockApp/Clock.jsx';
 import { WeatherApp } from '../../apps/weather/WeatherApp.jsx';
-// import { Calculator } from 'src/apps/calculadora/Calculator.jsx';
+import { Calculator } from '../../apps/calculadora/Calculator.jsx';
 // import { NoteBlock } from 'src/apps/blocNotas/NoteBlock.jsx';
 // import { GamesFolder } from 'src/apps/GamesFolder/GamesFolder.jsx';
 // import { MusicPlayerXP } from 'src/apps/musicPlayer/MusicPlayerXp.jsx';
@@ -31,7 +31,7 @@ const componentMap = {
   // Clock,
   WeatherApp,
   // TerminalApp,
-  // Calculator,
+  Calculator,
   // NoteBlock,
   // GamesFolder,
   // MusicPlayerXP,
