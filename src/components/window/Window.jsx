@@ -13,9 +13,9 @@ import { WeatherApp } from '../../apps/weather/WeatherApp.jsx';
 import { Calculator } from '../../apps/calculadora/Calculator.jsx';
 import { NoteBlock } from '../../apps/blocNotas/NoteBlock.jsx';
 import { GamesFolder } from '../../apps/GamesFolder/GamesFolder.jsx';
-// import { MusicPlayerXP } from '../../apps/MusicPlayer/MusicPlayerXp.jsx';
+import { MusicPlayerXP } from '../../apps/MusicPlayer/MusicPlayerXP.jsx';
 import { ContactsManagerXP } from '../../apps/contactManager/ContactManagerXp.jsx';
-// import { ToDoXP } from '../../apps/ToDo/ToDoXp.jsx';
+import { ToDoXP } from '../../apps/ToDo/ToDoXP.jsx';
 import { PowerPointApp } from '../../apps/PowerPoint/PowerPointApp.jsx';
 import { VideoPlayer } from '../../apps/videosXp/VideoPlayer.jsx';
 import { TerminalApp } from '../../apps/terminal/TerminalApp.jsx';
@@ -34,9 +34,9 @@ const componentMap = {
   Calculator,
   NoteBlock,
   GamesFolder,
-  // MusicPlayerXP,
+  MusicPlayerXP,
   ContactsManagerXP,
-  // ToDoXP,
+  ToDoXP,
   PowerPointApp,
   VideoPlayer,
 };
