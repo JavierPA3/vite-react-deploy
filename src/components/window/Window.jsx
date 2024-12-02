@@ -10,7 +10,6 @@ import { PythonApi } from '../../apps/certificados/PythonApi';
 import { Tfg } from '../../apps/certificados/Tfg';
 import { Clock } from '../../apps/clockApp/Clock';
 import { WeatherApp } from '../../apps/weather/WeatherApp';
-import TerminalApp from '/src/apps/terminal/terminalApp';
 import { Calculator } from '../../apps/calculadora/Calculator';
 import { NoteBlock } from '../../apps/blocNotas/NoteBlock';
 import { GamesFolder } from '../../apps/GamesFolder/GamesFolder';
@@ -19,6 +18,7 @@ import { ContactsManagerXP } from '../../apps/contactManager/ContactManagerXp';
 import { ToDoXP } from '../../apps/ToDo/ToDoXp';
 import { PowerPointApp } from '../../apps/PowerPoint/PowerPointApp';
 import { VideoPlayer } from '../../apps/videosXp/VideoPlayer';
+import { TerminalApp } from '/src/apps/terminal/terminalApp';
 const componentMap = {
   AboutMe,
   MoreAboutMe,
