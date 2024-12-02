@@ -12,7 +12,7 @@ import { Tfg } from '../../apps/certificados/Tfg.jsx';
 import { WeatherApp } from '../../apps/weather/WeatherApp.jsx';
 import { Calculator } from '../../apps/calculadora/Calculator.jsx';
 import { NoteBlock } from '../../apps/blocNotas/NoteBlock.jsx';
-// import { GamesFolder } from 'src/apps/GamesFolder/GamesFolder.jsx';
+import { GamesFolder } from '../../apps/GamesFolder/GamesFolder.jsx';
 // import { MusicPlayerXP } from 'src/apps/musicPlayer/MusicPlayerXp.jsx';
 // import { ContactsManagerXP } from 'src/apps/contactManager/ContactManagerXp.jsx';
 // import { ToDoXP } from 'src/apps/ToDo/ToDoXp.jsx';
@@ -33,7 +33,7 @@ const componentMap = {
   // TerminalApp,
   Calculator,
   NoteBlock,
-  // GamesFolder,
+  GamesFolder,
   // MusicPlayerXP,
   // ContactsManagerXP,
   // ToDoXP,
