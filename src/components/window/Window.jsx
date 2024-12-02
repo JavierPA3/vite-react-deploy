@@ -15,7 +15,7 @@ import { NoteBlock } from '../../apps/blocNotas/NoteBlock.jsx';
 import { GamesFolder } from '../../apps/GamesFolder/GamesFolder.jsx';
 import { MusicPlayerXP } from '../../apps/musicPlayer/MusicPlayerXp.jsx';
 import { ContactsManagerXP } from '../../apps/contactManager/ContactManagerXp.jsx';
-import { ToDoXP } from '../../apps/todo/ToDoXp.jsx';
+import { ToDoXP } from '../../apps/ToDo/ToDoXp.jsx';
 import { PowerPointApp } from '../../apps/PowerPoint/PowerPointApp.jsx';
 import { VideoPlayer } from '../../apps/videosXp/VideoPlayer.jsx';
 import { TerminalApp } from '../../apps/terminal/terminalApp.jsx';
