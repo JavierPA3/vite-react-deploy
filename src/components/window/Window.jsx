@@ -14,7 +14,7 @@ import { Calculator } from '../../apps/calculadora/Calculator.jsx';
 import { NoteBlock } from '../../apps/blocNotas/NoteBlock.jsx';
 import { GamesFolder } from '../../apps/GamesFolder/GamesFolder.jsx';
 // import { MusicPlayerXP } from '../../apps/MusicPlayer/MusicPlayerXp.jsx';
-import { ContactsManagerXP } from 'src/apps/contactManager/ContactManagerXp.jsx';
+import { ContactsManagerXP } from '../../apps/contactManager/ContactManagerXp.jsx';
 // import { ToDoXP } from 'src/apps/ToDo/ToDoXp.jsx';
 // import { PowerPointApp } from 'src/apps/PowerPoint/PowerPointApp.jsx';
 // import { VideoPlayer } from 'src/apps/videosXp/VideoPlayer.jsx';
