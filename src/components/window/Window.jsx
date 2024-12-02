@@ -15,7 +15,7 @@ import { NoteBlock } from 'src/apps/blocNotas/NoteBlock';
 import { GamesFolder } from 'src/apps/GamesFolder/GamesFolder';
 import { MusicPlayerXP } from 'src/apps/musicPlayer/MusicPlayerXp';
 import { ContactsManagerXP } from 'src/apps/contactManager/ContactManagerXp';
-import { ToDoXP } from 'src/apps/ToDo/ToDoXp';
+import { ToDoXP } from 'src/apps/todo/ToDoXp';
 import { PowerPointApp } from 'src/apps/PowerPoint/PowerPointApp';
 import { VideoPlayer } from 'src/apps/videosXp/VideoPlayer';
 import { TerminalApp } from 'src/apps/terminal/terminalApp';
