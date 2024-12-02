@@ -1,44 +1,44 @@
 import { useState } from 'react';
 import './window.css';
-import { AboutMe } from 'src/apps/certificados/AboutMe.jsx';
-import { MoreAboutMe } from 'src/apps/certificados/MoreAboutMe.jsx';
-import { Symblog } from 'src/apps/certificados/Symblog.jsx';
-import { CrudOne } from 'src/apps/certificados/CrudOne.jsx';
-import { PitchEventing } from 'src/apps/certificados/PitchEventing.jsx';
-import { Porfolio } from 'src/apps/certificados/Porfolio.jsx';
-import { PythonApi } from 'src/apps/certificados/PythonApi.jsx';
-import { Tfg } from 'src/apps/certificados/Tfg.jsx';
-import { Clock } from 'src/apps/clockApp/Clock.jsx';
-import { WeatherApp } from 'src/apps/weather/WeatherApp.jsx';
-import { Calculator } from 'src/apps/calculadora/Calculator.jsx';
-import { NoteBlock } from 'src/apps/blocNotas/NoteBlock.jsx';
-import { GamesFolder } from 'src/apps/GamesFolder/GamesFolder.jsx';
-import { MusicPlayerXP } from 'src/apps/musicPlayer/MusicPlayerXp.jsx';
-import { ContactsManagerXP } from 'src/apps/contactManager/ContactManagerXp.jsx';
-import { ToDoXP } from 'src/apps/ToDo/ToDoXp.jsx';
-import { PowerPointApp } from 'src/apps/PowerPoint/PowerPointApp.jsx';
-import { VideoPlayer } from 'src/apps/videosXp/VideoPlayer.jsx';
-import { TerminalApp } from 'src/apps/terminal/terminalApp.jsx';
+import { AboutMe } from '../../apps/certificados/AboutMe.jsx';
+// import { MoreAboutMe } from 'src/apps/certificados/MoreAboutMe.jsx';
+// import { Symblog } from 'src/apps/certificados/Symblog.jsx';
+// import { CrudOne } from 'src/apps/certificados/CrudOne.jsx';
+// import { PitchEventing } from 'src/apps/certificados/PitchEventing.jsx';
+// import { Porfolio } from 'src/apps/certificados/Porfolio.jsx';
+// import { PythonApi } from 'src/apps/certificados/PythonApi.jsx';
+// import { Tfg } from 'src/apps/certificados/Tfg.jsx';
+// import { Clock } from 'src/apps/clockApp/Clock.jsx';
+// import { WeatherApp } from 'src/apps/weather/WeatherApp.jsx';
+// import { Calculator } from 'src/apps/calculadora/Calculator.jsx';
+// import { NoteBlock } from 'src/apps/blocNotas/NoteBlock.jsx';
+// import { GamesFolder } from 'src/apps/GamesFolder/GamesFolder.jsx';
+// import { MusicPlayerXP } from 'src/apps/musicPlayer/MusicPlayerXp.jsx';
+// import { ContactsManagerXP } from 'src/apps/contactManager/ContactManagerXp.jsx';
+// import { ToDoXP } from 'src/apps/ToDo/ToDoXp.jsx';
+// import { PowerPointApp } from 'src/apps/PowerPoint/PowerPointApp.jsx';
+// import { VideoPlayer } from 'src/apps/videosXp/VideoPlayer.jsx';
+// import { TerminalApp } from 'src/apps/terminal/terminalApp.jsx';
 const componentMap = {
   AboutMe,
-  MoreAboutMe,
-  Symblog,
-  CrudOne,
-  PitchEventing,
-  Porfolio,
-  PythonApi,
-  Tfg,
-  Clock,
-  WeatherApp,
-  TerminalApp,
-  Calculator,
-  NoteBlock,
-  GamesFolder,
-  MusicPlayerXP,
-  ContactsManagerXP,
-  ToDoXP,
-  PowerPointApp,
-  VideoPlayer,
+  // MoreAboutMe,
+  // Symblog,
+  // CrudOne,
+  // PitchEventing,
+  // Porfolio,
+  // PythonApi,
+  // Tfg,
+  // Clock,
+  // WeatherApp,
+  // TerminalApp,
+  // Calculator,
+  // NoteBlock,
+  // GamesFolder,
+  // MusicPlayerXP,
+  // ContactsManagerXP,
+  // ToDoXP,
+  // PowerPointApp,
+  // VideoPlayer,
 };
 
 export const Window = ({ app, onClose, imageWindow, nameWindow }) => {
