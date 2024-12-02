@@ -8,8 +8,8 @@ import { PitchEventing } from '../../apps/certificados/PitchEventing.jsx';
 import { Porfolio } from '../../apps/certificados/Porfolio.jsx';
 import { PythonApi } from '../../apps/certificados/PythonApi.jsx';
 import { Tfg } from '../../apps/certificados/Tfg.jsx';
-import { Clock } from '../../apps/clockApp/Clock.jsx';
-// import { WeatherApp } from 'src/apps/weather/WeatherApp.jsx';
+// import { Clock } from '../../apps/clockApp/Clock.jsx';
+import { WeatherApp } from '../../apps/weather/WeatherApp.jsx';
 // import { Calculator } from 'src/apps/calculadora/Calculator.jsx';
 // import { NoteBlock } from 'src/apps/blocNotas/NoteBlock.jsx';
 // import { GamesFolder } from 'src/apps/GamesFolder/GamesFolder.jsx';
@@ -28,8 +28,8 @@ const componentMap = {
   Porfolio,
   PythonApi,
   Tfg,
-  Clock,
-  // WeatherApp,
+  // Clock,
+  WeatherApp,
   // TerminalApp,
   // Calculator,
   // NoteBlock,
