@@ -18,7 +18,7 @@ import { ContactsManagerXP } from '../../apps/contactManager/ContactManagerXp.js
 // import { ToDoXP } from '../../apps/ToDo/ToDoXp.jsx';
 import { PowerPointApp } from '../../apps/PowerPoint/PowerPointApp.jsx';
 import { VideoPlayer } from '../../apps/videosXp/VideoPlayer.jsx';
-// import { TerminalApp } from 'src/apps/terminal/terminalApp.jsx';
+import { TerminalApp } from '../../apps/terminal/terminalApp.jsx';
 const componentMap = {
   AboutMe,
   MoreAboutMe,
@@ -30,7 +30,7 @@ const componentMap = {
   Tfg,
   // Clock,
   WeatherApp,
-  // TerminalApp,
+  TerminalApp,
   Calculator,
   NoteBlock,
   GamesFolder,
