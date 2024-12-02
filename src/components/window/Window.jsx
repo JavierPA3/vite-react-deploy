@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import './window.css';
 import { AboutMe } from '../../apps/certificados/AboutMe.jsx';
- import { MoreAboutMe } from '../../apps/certificados/MoreAboutMe.jsx';
-// import { Symblog } from 'src/apps/certificados/Symblog.jsx';
-// import { CrudOne } from 'src/apps/certificados/CrudOne.jsx';
-// import { PitchEventing } from 'src/apps/certificados/PitchEventing.jsx';
-// import { Porfolio } from 'src/apps/certificados/Porfolio.jsx';
-// import { PythonApi } from 'src/apps/certificados/PythonApi.jsx';
-// import { Tfg } from 'src/apps/certificados/Tfg.jsx';
+import { MoreAboutMe } from '../../apps/certificados/MoreAboutMe.jsx';
+import { Symblog } from '../../apps/certificados/Symblog.jsx';
+import { CrudOne } from '../../apps/certificados/CrudOne.jsx';
+import { PitchEventing } from '../../apps/certificados/PitchEventing.jsx';
+import { Porfolio } from '../../apps/certificados/Porfolio.jsx';
+import { PythonApi } from '../../apps/certificados/PythonApi.jsx';
+import { Tfg } from '../../apps/certificados/Tfg.jsx';
 // import { Clock } from 'src/apps/clockApp/Clock.jsx';
 // import { WeatherApp } from 'src/apps/weather/WeatherApp.jsx';
 // import { Calculator } from 'src/apps/calculadora/Calculator.jsx';
@@ -22,12 +22,12 @@ import { AboutMe } from '../../apps/certificados/AboutMe.jsx';
 const componentMap = {
   AboutMe,
   MoreAboutMe,
-  // Symblog,
-  // CrudOne,
-  // PitchEventing,
-  // Porfolio,
-  // PythonApi,
-  // Tfg,
+  Symblog,
+  CrudOne,
+  PitchEventing,
+  Porfolio,
+  PythonApi,
+  Tfg,
   // Clock,
   // WeatherApp,
   // TerminalApp,
