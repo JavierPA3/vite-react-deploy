@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './window.css';
 import { AboutMe } from '../../apps/certificados/AboutMe.jsx';
-// import { MoreAboutMe } from 'src/apps/certificados/MoreAboutMe.jsx';
+ import { MoreAboutMe } from '../../apps/certificados/MoreAboutMe.jsx';
 // import { Symblog } from 'src/apps/certificados/Symblog.jsx';
 // import { CrudOne } from 'src/apps/certificados/CrudOne.jsx';
 // import { PitchEventing } from 'src/apps/certificados/PitchEventing.jsx';
@@ -21,7 +21,7 @@ import { AboutMe } from '../../apps/certificados/AboutMe.jsx';
 // import { TerminalApp } from 'src/apps/terminal/terminalApp.jsx';
 const componentMap = {
   AboutMe,
-  // MoreAboutMe,
+  MoreAboutMe,
   // Symblog,
   // CrudOne,
   // PitchEventing,
