@@ -14,6 +14,11 @@ import { TerminalApp } from '../../apps/terminal/terminalApp';
 import { Calculator } from '../../apps/calculadora/Calculator';
 import { NoteBlock } from '../../apps/blocNotas/NoteBlock';
 import { GamesFolder } from '../../apps/GamesFolder/GamesFolder';
+import { MusicPlayerXP } from '../../apps/musicPlayer/MusicPlayerXp';
+import { ContactsManagerXP } from '../../apps/contactManager/ContactManagerXp';
+import { ToDoXP } from '../../apps/ToDo/ToDoXp';
+import { PowerPointApp } from '../../apps/PowerPoint/PowerPointApp';
+import { VideoPlayer } from '../../apps/videosXp/VideoPlayer';
 const componentMap = {
   AboutMe,
   MoreAboutMe,
@@ -29,13 +34,17 @@ const componentMap = {
   Calculator,
   NoteBlock,
   GamesFolder,
-
+  MusicPlayerXP,
+  ContactsManagerXP,
+  ToDoXP,
+  PowerPointApp,
+  VideoPlayer,
 };
 
 export const Window = ({ app, onClose, imageWindow, nameWindow }) => {
   const SelectedComponent = componentMap[app];
 
-  const [position, setPosition] = useState({ top: 5, left: 350 });
+  const [position, setPosition] = useState({ top: 0, left: 350 });
   const [size, setSize] = useState({ width: 950, height: 600 }); 
   const [dragging, setDragging] = useState(false);
   const [resizing, setResizing] = useState(false);

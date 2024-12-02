@@ -15,17 +15,16 @@ export const Start = () => {
       <IconsDown image="img/cloudSun.png" name="Weather" alt="WeatherApp"/>
       <IconsDown image="img/Notepad.png" name="Notas" alt='NoteBlock'/>
       <IconsDown image="img/Game Controller.png" name="Juegos" alt='GamesFolder'/>
-      <IconsDown image="img/.png" name="Grabadora" alt='GamesFolder'/>
-      <IconsDown image="img/.png" name="XpMusic" alt='GamesFolder'/>
+      <IconsDown image="img/Attributes.png" name="Todo" alt='ToDoXP'/>
+      <IconsDown image="img/WMP Device Error.png" name="XpMusic" alt='MusicPlayerXP'/>
 
           </div>
     <div className='rightStartContent'>
       <IconsDown image="img/Command Prompt.png" name="terminalApp"  alt='TerminalApp'/>
       <IconsDown image="img/Input Panel.png" name="Calculadora" alt='Calculator'/>
-      <IconsDown image="img/.png" name="Contactos" alt='GamesFolder'/>
-      <IconsDown image="img/.png" name="" alt='GamesFolder'/>
-      <IconsDown image="img/.png" name="Juegos" alt='GamesFolder'/>
-      <IconsDown image="img/.png" name="Juegos" alt='GamesFolder'/>
+      <IconsDown image="img/OE Reply All.png" name="Contactos" alt='ContactsManagerXP'/>
+      <IconsDown image="img/Windows Media Player Skin.png" name="Reproductor" alt='VideoPlayer'/>
+      <IconsDown image="img/Windows Media Encoder.png" name="PowerPoint" alt='PowerPointApp'/>
 
     </div>
   </div>
