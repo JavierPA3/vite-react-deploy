@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
 import './window.css';
-import { AboutMe } from '../../apps/certificados/AboutMe';
-import { MoreAboutMe } from '../../apps/certificados/MoreAboutMe';
-import { Symblog } from '../../apps/certificados/Symblog';
-import { CrudOne } from '../../apps/certificados/CrudOne';
-import { PitchEventing } from '../../apps/certificados/PitchEventing';
-import { Porfolio } from '../../apps/certificados/Porfolio';
-import { PythonApi } from '../../apps/certificados/PythonApi';
-import { Tfg } from '../../apps/certificados/Tfg';
-import { Clock } from '../../apps/clockApp/Clock';
-import { WeatherApp } from '../../apps/weather/WeatherApp';
-import { Calculator } from '../../apps/calculadora/Calculator';
-import { NoteBlock } from '../../apps/blocNotas/NoteBlock';
-import { GamesFolder } from '../../apps/GamesFolder/GamesFolder';
-import { MusicPlayerXP } from '../../apps/musicPlayer/MusicPlayerXp';
-import { ContactsManagerXP } from '../../apps/contactManager/ContactManagerXp';
-import { ToDoXP } from '../../apps/ToDo/ToDoXp';
-import { PowerPointApp } from '../../apps/PowerPoint/PowerPointApp';
-import { VideoPlayer } from '../../apps/videosXp/VideoPlayer';
-import { TerminalApp } from '/src/apps/terminal/terminalApp';
+import { AboutMe } from 'src/apps/certificados/AboutMe';
+import { MoreAboutMe } from 'src/apps/certificados/MoreAboutMe';
+import { Symblog } from 'src/apps/certificados/Symblog';
+import { CrudOne } from 'src/apps/certificados/CrudOne';
+import { PitchEventing } from 'src/apps/certificados/PitchEventing';
+import { Porfolio } from 'src/apps/certificados/Porfolio';
+import { PythonApi } from 'src/apps/certificados/PythonApi';
+import { Tfg } from 'src/apps/certificados/Tfg';
+import { Clock } from 'src/apps/clockApp/Clock';
+import { WeatherApp } from 'src/apps/weather/WeatherApp';
+import { Calculator } from 'src/apps/calculadora/Calculator';
+import { NoteBlock } from 'src/apps/blocNotas/NoteBlock';
+import { GamesFolder } from 'src/apps/GamesFolder/GamesFolder';
+import { MusicPlayerXP } from 'src/apps/musicPlayer/MusicPlayerXp';
+import { ContactsManagerXP } from 'src/apps/contactManager/ContactManagerXp';
+import { ToDoXP } from 'src/apps/ToDo/ToDoXp';
+import { PowerPointApp } from 'src/apps/PowerPoint/PowerPointApp';
+import { VideoPlayer } from 'src/apps/videosXp/VideoPlayer';
+import { TerminalApp } from 'src/apps/terminal/terminalApp';
 const componentMap = {
   AboutMe,
   MoreAboutMe,
