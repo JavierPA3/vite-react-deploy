@@ -11,7 +11,7 @@ import { Tfg } from '../../apps/certificados/Tfg.jsx';
 // import { Clock } from '../../apps/clockApp/Clock.jsx';
 import { WeatherApp } from '../../apps/weather/WeatherApp.jsx';
 import { Calculator } from '../../apps/calculadora/Calculator.jsx';
-// import { NoteBlock } from 'src/apps/blocNotas/NoteBlock.jsx';
+import { NoteBlock } from '../../apps/blocnotas/NoteBlock.jsx';
 // import { GamesFolder } from 'src/apps/GamesFolder/GamesFolder.jsx';
 // import { MusicPlayerXP } from 'src/apps/musicPlayer/MusicPlayerXp.jsx';
 // import { ContactsManagerXP } from 'src/apps/contactManager/ContactManagerXp.jsx';
@@ -32,7 +32,7 @@ const componentMap = {
   WeatherApp,
   // TerminalApp,
   Calculator,
-  // NoteBlock,
+  NoteBlock,
   // GamesFolder,
   // MusicPlayerXP,
   // ContactsManagerXP,
