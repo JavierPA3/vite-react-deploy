@@ -15,8 +15,8 @@ import { NoteBlock } from '../../apps/blocNotas/NoteBlock.jsx';
 import { GamesFolder } from '../../apps/GamesFolder/GamesFolder.jsx';
 // import { MusicPlayerXP } from '../../apps/MusicPlayer/MusicPlayerXp.jsx';
 import { ContactsManagerXP } from '../../apps/contactManager/ContactManagerXp.jsx';
-import { ToDoXP } from '../../apps/ToDo/ToDoXp.jsx';
-// import { PowerPointApp } from 'src/apps/PowerPoint/PowerPointApp.jsx';
+// import { ToDoXP } from '../../apps/ToDo/ToDoXp.jsx';
+import { PowerPointApp } from '../../apps/PowerPoint/PowerPointApp.jsx';
 // import { VideoPlayer } from 'src/apps/videosXp/VideoPlayer.jsx';
 // import { TerminalApp } from 'src/apps/terminal/terminalApp.jsx';
 const componentMap = {
@@ -36,8 +36,8 @@ const componentMap = {
   GamesFolder,
   // MusicPlayerXP,
   ContactsManagerXP,
-  ToDoXP,
-  // PowerPointApp,
+  // ToDoXP,
+  PowerPointApp,
   // VideoPlayer,
 };
 
