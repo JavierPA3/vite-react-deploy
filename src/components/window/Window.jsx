@@ -13,7 +13,7 @@ import { WeatherApp } from '../../apps/weather/WeatherApp.jsx';
 import { Calculator } from '../../apps/calculadora/Calculator.jsx';
 import { NoteBlock } from '../../apps/blocNotas/NoteBlock.jsx';
 import { GamesFolder } from '../../apps/GamesFolder/GamesFolder.jsx';
-// import { MusicPlayerXP } from 'src/apps/musicPlayer/MusicPlayerXp.jsx';
+import { MusicPlayerXP } from '../../apps/musicPlayer/MusicPlayerXp.jsx';
 // import { ContactsManagerXP } from 'src/apps/contactManager/ContactManagerXp.jsx';
 // import { ToDoXP } from 'src/apps/ToDo/ToDoXp.jsx';
 // import { PowerPointApp } from 'src/apps/PowerPoint/PowerPointApp.jsx';
@@ -34,7 +34,7 @@ const componentMap = {
   Calculator,
   NoteBlock,
   GamesFolder,
-  // MusicPlayerXP,
+  MusicPlayerXP,
   // ContactsManagerXP,
   // ToDoXP,
   // PowerPointApp,
