@@ -13,14 +13,14 @@
 }
 
 .iconsPicture {
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 4vh;
+    height: 4vh;
     object-fit: cover;
     margin-left: 0.5rem;
 }
 
 .iconsP {
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: white;
     margin-top: 0.1rem; 
 }

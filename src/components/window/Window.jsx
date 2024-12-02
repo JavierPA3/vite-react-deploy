@@ -15,7 +15,7 @@ import { NoteBlock } from 'src/apps/blocNotas/NoteBlock';
 import { GamesFolder } from 'src/apps/GamesFolder/GamesFolder';
 import { MusicPlayerXP } from 'src/apps/musicPlayer/MusicPlayerXp';
 import { ContactsManagerXP } from 'src/apps/contactManager/ContactManagerXp';
-// import { ToDoXP } from 'src/apps/todo/ToDoXp';
+import { ToDoXP } from 'src/apps/todo/ToDoXp';
 import { PowerPointApp } from 'src/apps/PowerPoint/PowerPointApp';
 import { VideoPlayer } from 'src/apps/videosXp/VideoPlayer';
 import { TerminalApp } from 'src/apps/terminal/terminalApp';
@@ -36,7 +36,7 @@ const componentMap = {
   GamesFolder,
   MusicPlayerXP,
   ContactsManagerXP,
-  // ToDoXP,
+  ToDoXP,
   PowerPointApp,
   VideoPlayer,
 };
@@ -44,8 +44,8 @@ const componentMap = {
 export const Window = ({ app, onClose, imageWindow, nameWindow }) => {
   const SelectedComponent = componentMap[app];
 
-  const [position, setPosition] = useState({ top: 0, left: 350 });
-  const [size, setSize] = useState({ width: 950, height: 600 }); 
+  const [position, setPosition] = useState({ top: 5, left: 350 });
+  const [size, setSize] = useState({ width: 1000, height: 700 }); 
   const [dragging, setDragging] = useState(false);
   const [resizing, setResizing] = useState(false);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
