@@ -1,24 +1,24 @@
 import { useState } from 'react';
 import './window.css';
-import { AboutMe } from '../apps/certificados/AboutMe.jsx';
-import { MoreAboutMe } from '../apps/certificados/MoreAboutMe.jsx';
-import { Symblog } from '../apps/certificados/Symblog.jsx';
-import { CrudOne } from '../apps/certificados/CrudOne.jsx';
-import { PitchEventing } from '../apps/certificados/PitchEventing.jsx';
-import { Porfolio } from '../apps/certificados/Porfolio.jsx';
-import { PythonApi } from '../apps/certificados/PythonApi.jsx';
-import { Tfg } from '../apps/certificados/Tfg.jsx';
-import { Clock } from '../apps/clockApp/Clock.jsx';
-import { WeatherApp } from '../apps/weather/WeatherApp.jsx';
-import { Calculator } from '../apps/calculadora/Calculator.jsx';
-import { NoteBlock } from '../apps/blocNotas/NoteBlock.jsx';
-import { GamesFolder } from '../apps/GamesFolder/GamesFolder.jsx';
-import { MusicPlayerXP } from '../apps/musicPlayer/MusicPlayerXp.jsx';
-import { ContactsManagerXP } from '../apps/contactManager/ContactManagerXp.jsx';
-import { ToDoXP } from '../apps/todo/ToDoXp.jsx';
-import { PowerPointApp } from '../apps/PowerPoint/PowerPointApp.jsx';
-import { VideoPlayer } from '../apps/videosXp/VideoPlayer.jsx';
-import { TerminalApp } from '../apps/terminal/terminalApp.jsx';
+import { AboutMe } from '../../apps/certificados/AboutMe.jsx';
+import { MoreAboutMe } from '../../apps/certificados/MoreAboutMe.jsx';
+import { Symblog } from '../../apps/certificados/Symblog.jsx';
+import { CrudOne } from '../../apps/certificados/CrudOne.jsx';
+import { PitchEventing } from '../../apps/certificados/PitchEventing.jsx';
+import { Porfolio } from '../../apps/certificados/Porfolio.jsx';
+import { PythonApi } from '../../apps/certificados/PythonApi.jsx';
+import { Tfg } from '../../apps/certificados/Tfg.jsx';
+import { Clock } from '../../apps/clockApp/Clock.jsx';
+import { WeatherApp } from '../../apps/weather/WeatherApp.jsx';
+import { Calculator } from '../../apps/calculadora/Calculator.jsx';
+import { NoteBlock } from '../../apps/blocNotas/NoteBlock.jsx';
+import { GamesFolder } from '../../apps/GamesFolder/GamesFolder.jsx';
+import { MusicPlayerXP } from '../../apps/musicPlayer/MusicPlayerXp.jsx';
+import { ContactsManagerXP } from '../../apps/contactManager/ContactManagerXp.jsx';
+import { ToDoXP } from '../../apps/todo/ToDoXp.jsx';
+import { PowerPointApp } from '../../apps/PowerPoint/PowerPointApp.jsx';
+import { VideoPlayer } from '../../apps/videosXp/VideoPlayer.jsx';
+import { TerminalApp } from '../../apps/terminal/terminalApp.jsx';
 const componentMap = {
   AboutMe,
   MoreAboutMe,
